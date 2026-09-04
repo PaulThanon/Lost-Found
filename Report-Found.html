@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Found Item - Lost & Found Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">RecoverPortal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse Items</a></li>
+        <li><a href="report-lost.html">Report Lost</a></li>
+        <li><a href="report-found.html" class="active">Report Found</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div style="max-width: 600px; margin: 0 auto; background: var(--white); padding: 2rem; border: 1px solid var(--border); border-radius: 0.5rem;">
+      <h2>Report a Found Item</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Thank you for helping reunite an item with its owner! Fill out details below.</p>
+      
+      <form>
+        <div class="form-group">
+          <label for="found-name">Item Found</label>
+          <input type="text" id="found-name" placeholder="e.g., 100฿, Student ID" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="found-location">Where Did You Find It?</label>
+          <input type="text" id="found-location" placeholder="e.g., First entrance of TUP school" required>
+        </div>
+
+        <div class="form-group">
+          <label for="found-desc">Description / Safe Keeping Location</label>
+          <textarea id="found-desc" rows="4" placeholder="Briefly describe the item or state where it has been handed over..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="finder-email">Your Contact Email</label>
+          <input type="email" id="finder-email" placeholder="name@example.com" required>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;">Submit Found Report</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; By Thanon</p>
+  </footer>
+</body>
+</html>

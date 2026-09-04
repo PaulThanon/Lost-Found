@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Lost Item - Lost & Found Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">RecoverPortal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse Items</a></li>
+        <li><a href="report-lost.html" class="active">Report Lost</a></li>
+        <li><a href="report-found.html">Report Found</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div style="max-width: 600px; margin: 0 auto; background: var(--white); padding: 2rem; border: 1px solid var(--border); border-radius: 0.5rem;">
+      <h2>Report a Lost Item</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Provide details about what you misplaced so others can look out for it.</p>
+      
+      <!-- Pure HTML structural form (action can be linked downstream) -->
+      <form>
+        <div class="form-group">
+          <label for="item-name">Item Name</label>
+          <input type="text" id="item-name" placeholder="e.g., iPhone 16 plus, Car Keys" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="location">Last Known Location</label>
+          <input type="text" id="location" placeholder="e.g., TUP canteen" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Detailed Description</label>
+          <textarea id="description" rows="4" placeholder="Color, distinguishing features, brand..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Your Email Address</label>
+          <input type="email" id="contact-email" placeholder="Wit_chabthanom@gmail.com" required>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;">Submit Lost Report</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;  By Thanon</p>
+  </footer>
+</body>
+</html>
